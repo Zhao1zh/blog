@@ -5,12 +5,20 @@ pubDate: "Jul 15 2022"
 heroImage: "/blog-placeholder-4.jpg"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+如果不能吸引输出观点的意见领袖，一些颜值区帅哥美女入驻，最多就是充实一部分低劣mcn的阵容，挤压国产美女的生存空间。
 
-Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc. Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra massa massa ultricies mi.
+而我觉得小红书需要重点关注英文口播内容。
 
-Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
+对小红书的影响远大于富贵，原本小红书对于海外华人来说是一个典型的东亚文化社区，可以替代很多app，留学生或新移民都非常依赖小红书而不是x或meta系列。
 
-Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id cursus metus aliquam eleifend mi.
+纯英文内容无疑会加大小红书内容审查难度，过于强硬的审查可以自保，宽松的审查一旦出现意识形态的越线，小红书将会受到非常严格的全方位审查，在春节之前发生这样的情况，我愿意相信小红书方是不愿意看到的。
 
-Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
+中美两国的z世代是在完全不同的文化背景和互联网生态下分别长大的同龄人，如果交流仅限于身材颜值家庭作业，是互联网本来该有的样子。可是这一波难民这场狂欢恰恰是他们为了维护自己言论自由而做出的集体抗议，小红书成了意识形态和国家安全关于tiktok的战场。
+
+以我对小红书生态有着个人局限性的了解，小红书没有能力和平接受这次挑战，巨大的意识形态差异、青少年关切的敏感话题都会让小红书汗流浃背。
+如果国家意识形态阵地因为一个社交媒体没能坚守而出现无法弥合的裂痕，这片战场将会被摧毁，小红书积累来的优势也会随着这场狂欢的落幕而荡然无存。
+
+意识形态是国家安全的护城河，美国青少年尤其是社媒重度用户，是重点需要关注的群体，这也就是为什么有抖音有洋抖，海外有特殊的版本。
+五角大楼有相当多的预算进行意识形态侵略，北京方面也付出了很大的努力，我们普通网民也在反间谍方面时刻警惕，小红书怎么能不紧盯的呢？
+
+ 尊敬的重点涉密部门工作的网友们，不要轻易和主动亲近你的热情外国美女交朋友哦，实在拿不准可以先介绍给我，先过我这一关
