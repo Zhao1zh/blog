@@ -1,152 +1,79 @@
 ---
-import type { CollectionEntry } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import FormattedDate from '../components/FormattedDate.astro';
 import { SITE_TITLE } from '../consts';
-import { getCollection } from 'astro:content';
-
-type Props = CollectionEntry<'blog'>['data'] & { heroImage?: string; isBlog?: boolean }; // 添加 isBlog
-
-const { title, description, pubDate, updatedDate, tags = [], heroImage, isBlog = true } = Astro.props;
-
-// 仅当 isBlog 为 true 时获取导航数据
-let prevPost = null;
-let nextPost = null;
-let allPosts = [];
-if (isBlog) {
-  allPosts = await getCollection('blog');
-  const sortedPosts = allPosts.sort((a, b) => new Date(b.data.pubDate) - new Date(a.data.pubDate));
-  const currentIndex = sortedPosts.findIndex(post => post.data.title === title);
-  prevPost = currentIndex < sortedPosts.length - 1 ? sortedPosts[currentIndex + 1] : null;
-  nextPost = currentIndex > 0 ? sortedPosts[currentIndex - 1] : null;
-}
 ---
 
+<!doctype html>
 <html lang="en">
     <head>
+        <BaseHead title={`About Me | ${SITE_TITLE}`} description="Learn more about me and connect via social media." />
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1996789261448613" crossorigin="anonymous"></script>
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
         <link rel="manifest" href="/site.webmanifest">
-        <BaseHead title={`${title} | ${SITE_TITLE}`} description={description} />
         <style>
             main {
                 width: calc(100% - 2em);
-                max-width: 100%;
-                margin: 0;
+                max-width: 720px;
+                margin: 0 auto;
+                padding: 2em 1em;
+                text-align: center;
             }
             .hero-image {
-                width: 100%;
                 margin-bottom: 1em;
             }
             .hero-image img {
-                display: block;
-                margin: 0 auto;
+                max-width: 100%;
+                height: auto;
                 border-radius: 12px;
-                box-shadow: var(--box-shadow);
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             }
-            .prose {
-                width: 720px;
-                max-width: calc(100% - 2em);
-                margin: auto;
-                padding: 1em;
+            h1 {
+                margin: 0 0 1em 0;
+                line-height: 1.2;
+            }
+            p {
                 color: rgb(var(--gray-dark));
+                line-height: 1.6;
+                margin-bottom: 2em;
             }
-            .title {
-                margin-bottom: 1em;
-                padding: 1em 0;
-                text-align: center;
-                line-height: 1;
+            .social-links {
+                margin-top: 2em;
             }
-            .title h1 {
-                margin: 0 0 0.5em 0;
-            }
-            .date {
-                margin-bottom: 0.2em;
-                color: rgb(var(--gray));
-            }
-            .tags {
-                margin-bottom: 0.5em;
-                color: rgb(var(--gray-dark));
-            }
-            .tags span {
-                margin-right: 0.5em;
-            }
-            .last-updated-on {
-                font-style: italic;
-            }
-            .navigation {
-                margin: 2em 0;
-                text-align: center;
-            }
-            .navigation a {
+            .social-links a {
+                display: inline-block;
                 margin: 0 1em;
                 color: #007acc;
                 text-decoration: none;
+                font-weight: bold;
             }
-            .navigation a:hover {
+            .social-links a:hover {
                 text-decoration: underline;
-            }
-            .dropdown {
-                margin: 2em 0;
-                text-align: center;
-            }
-            select {
-                padding: 0.5em;
-                font-size: 1em;
-                width: 50%;
-                max-width: 300px;
             }
         </style>
     </head>
-
     <body>
         <Header />
         <main>
-            <article>
-                <div class="prose">
-                    {heroImage && (
-                        <div class="hero-image">
-                            <img width={1020} height={510} src={heroImage} alt="" />
-                        </div>
-                    )}
-                    <div class="title">
-                        <h1>{title}</h1>
-                        <div class="date">
-                            <FormattedDate date={pubDate} />
-                            {updatedDate && (
-                                <div class="last-updated-on">
-                                    Last updated on <FormattedDate date={updatedDate} />
-                                </div>
-                            )}
-                        </div>
-                        <div class="tags">
-                            Tags: {tags.length > 0 ? tags.map(tag => <span>{tag}</span>) : '无'}
-                        </div>
-                        <hr />
-                    </div>
-                    <slot />
-                    {isBlog && (
-                        <>
-                            <div class="navigation">
-                                {prevPost && <a href={`/blog/${prevPost.slug}`}>上一篇: {prevPost.data.title}</a>}
-                                {nextPost && <a href={`/blog/${nextPost.slug}`}>下一篇: {nextPost.data.title}</a>}
-                            </div>
-                            <div class="dropdown">
-                                <select onchange="if (this.value) window.location.href = this.value;">
-                                    <option value="">其他博客文章</option>
-                                    {allPosts.map(post => (
-                                        <option value={`/blog/${post.slug}`}>{post.data.title}</option>
-                                    ))}
-                                </select>
-                            </div>
-                        </>
-                    )}
-                </div>
-            </article>
+            <div class="hero-image">
+                <img src="/blog-placeholder-about.jpg" alt="About Me" width="720" height="360" />
+            </div>
+            <h1>关于 峙行</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo
+                viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam
+                adipiscing.
+            </p>
+            <div class="social-links">
+                <a href="https://instagram.com/zhao1zhi" target="_blank">Instagram</a>
+                <a href="https://x.com/zhao1zhi" target="_blank">X</a>
+                <a href="https://youtube.com/@zhao1zhi" target="_blank">YouTube</a>
+                <a href="weixin://youtube.com/@zhao1zhi" target="_blank">WeChat</a>
+            </div>
         </main>
         <Footer />
     </body>
