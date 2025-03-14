@@ -8,7 +8,7 @@ import { SITE_TITLE } from '../consts';
 <!doctype html>
 <html lang="zh-CN">
     <head>
-        <BaseHead title={`关于 | ${SITE_TITLE}`} description="Learn more about me and connect via social media." />
+        <BaseHead title={`关于 | ${SITE_TITLE}`} description="了解更多关于我的信息，并通过社交媒体与我联系。" />
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1996789261448613" crossorigin="anonymous"></script>
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -20,10 +20,10 @@ import { SITE_TITLE } from '../consts';
                 max-width: 720px;
                 margin: 0 auto;
                 padding: 2em 1em;
-                text-align: center;
             }
             .hero-image {
-                margin-bottom: 1em;
+                margin-bottom: 1.5em;
+                text-align: center; /* 图片居中 */
             }
             .hero-image img {
                 max-width: 100%;
@@ -32,16 +32,21 @@ import { SITE_TITLE } from '../consts';
                 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             }
             h1 {
-                margin: 0 0 1em 0;
+                margin: 0 0 1.5em 0;
                 line-height: 1.2;
+                text-align: center; /* 标题居中 */
             }
-            p {
+            .content {
                 color: rgb(var(--gray-dark));
-                line-height: 1.6;
-                margin-bottom: 2em;
+                line-height: 1.8; /* 增加行距 */
+                text-align: left; /* 左对齐 */
+            }
+            .content p {
+                margin: 0 0 1.5em 0; /* 段间距 */
             }
             .social-links {
                 margin-top: 2em;
+                text-align: center; /* 社交链接居中 */
             }
             .social-links a {
                 display: inline-block;
@@ -59,25 +64,28 @@ import { SITE_TITLE } from '../consts';
         <Header />
         <main>
             <div class="hero-image">
-                <img src="/blog-placeholder-about.jpg" alt="About Me" width="720" height="360" />
+                <img src="/blog-placeholder-about.jpg" alt="关于我" width="720" height="360" />
             </div>
             <h1>关于峙行</h1>
-            <p>
-                “赵一峙”是我从2022年开始使用的网名，很显然这不是我真正的名字，但这个名字是我在互联网世界的代号，在这之前我用别的称呼作为互联网观点表达者，2022年时，我正式重新给自己准备一个替代真名的网络代称。
-                最初我希望能够像李子柒一样，作为中国人的形象和象征，影响世界其他角落的网友，我的网名也希望能够像她这样的结构“X子X”或“X一X” "X大/小X"这样，最终我选择用我真实的姓，赵一X。
-                最后一个字我希望能够表达出超出网名的意义，不仅仅是好听或者好记，我希望它像一个彩蛋一样被人发现，中文的有趣。
-                “峙”在中文里并不是常用字，三国时期诗人曹操有诗“水何澹澹，山岛耸峙”，“峙”本身也具有耸立的含义，而我选择它，是因为它是由“山”和“寺”两部分组成。
-                我的家乡，如果用四个字来形容是：表里山河
-                如果再加四个字，可以更加准确定位的话，就是多山多寺。 这就是山西。
-</p>
-<p>
-                "峙行"意思是：人生如逆旅，我亦是行人。我所见所想，都是旅途中的见闻，用峙行作为我博客的名字，我觉得恰当又浪漫。
-</p>
+            <div class="content">
+                <p>
+                    “赵一峙”是我从 2022 年开始使用的网名，很显然这不是我真正的名字，但这个名字是我在互联网世界的代号。在这之前，我用别的称呼作为互联网观点表达者。2022 年时，我正式重新给自己准备了一个替代真名的网络代称。
+                </p>
+                <p>
+                    最初，我希望能够像李子柒一样，作为中国人的形象和象征，影响世界其他角落的网友。我的网名也希望能够像她这样的结构，比如“X子X”或“X一X”、“X大/小X”。最终，我选择用我真实的姓，“赵一X”。最后一个字，我希望能够表达出超出网名的意义，不仅仅是好听或者好记，我希望它像一个彩蛋一样被人发现，体现中文的有趣。
+                </p>
+                <p>
+                    “峙”在中文里并不是常用字。三国时期诗人曹操有诗：“水何澹澹，山岛耸峙”，“峙”本身具有耸立的含义。而我选择它，是因为它由“山”和“寺”两部分组成。我的家乡，如果用四个字来形容是：表里山河。如果再加四个字，可以更加准确定位的话，就是多山多寺。这就是山西。
+                </p>
+                <p>
+                    “峙行”的意思是：人生如逆旅，我亦是行人。我所见所想，都是旅途中的见闻。用“峙行”作为我博客的名字，我觉得恰当又浪漫。
+                </p>
+            </div>
             <div class="social-links">
                 <a href="https://instagram.com/zhao1zhi" target="_blank">Instagram</a>
                 <a href="https://x.com/zhao1zhi" target="_blank">X</a>
                 <a href="https://youtube.com/@zhao1zhi" target="_blank">YouTube</a>
-                <a href="weixin://youtube.com/@zhao1zhi" target="_blank">WeChat</a>
+                <a href="weixin://dl/chat?zhao1zhi" target="_blank">WeChat</a>
             </div>
         </main>
         <Footer />
