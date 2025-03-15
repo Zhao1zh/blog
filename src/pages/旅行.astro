@@ -4,7 +4,7 @@ import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 import { getCollection } from 'astro:content';
-import FormattedDate from '../../components/FormattedDate.astro';
+import FormattedDate from '../components/FormattedDate.astro';
 
 // 过滤出类别为“旅行”的博客文章，并按日期降序排序
 const travelPosts = (await getCollection('blog', post => post.data.category === '旅行')).sort(
