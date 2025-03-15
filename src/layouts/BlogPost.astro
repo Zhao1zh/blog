@@ -117,14 +117,21 @@ const nextPost = currentIndex > 0 ? sortedPosts[currentIndex - 1] : null;
                         {prevPost && <a href={`/blog/${prevPost.slug}`}>上一篇: {prevPost.data.title}</a>}
                         {nextPost && <a href={`/blog/${nextPost.slug}`}>下一篇: {nextPost.data.title}</a>}
                     </div>
-                    <div class="dropdown">
-                        <select onchange="if (this.value) window.location.href = this.value;">
-                            <option value="">其他博客文章</option>
-                            {allPosts.map(post => (
-                                <option value={`/blog/${post.slug}`}>{post.data.title}</option>
-                            ))}
-                        </select>
-                    </div>
+                   <div class="dropdown">
+    <select onchange="if (this.value) window.location.href = this.value;">
+        <option value="">其他博客文章</option>
+        <optgroup label="旅行">
+            {allPosts.filter(post => post.data.category === '旅行').map(post => (
+                <option value={`/blog/${post.slug}`}>{post.data.title}</option>
+            ))}
+        </optgroup>
+        <optgroup label="其他">
+            {allPosts.filter(post => post.data.category !== '旅行').map(post => (
+                <option value={`/blog/${post.slug}`}>{post.data.title}</option>
+            ))}
+        </optgroup>
+    </select>
+</div>
                 </div>
             </article>
         </main>
