@@ -10,6 +10,8 @@ import FormattedDate from '../components/FormattedDate.astro';
 const travelPosts = (await getCollection('blog', post => post.data.category === '旅行')).sort(
     (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
+{console.log(travelPosts)} <!-- 检查 travelPosts 是否为空 -->
+{travelPosts.length === 0 && <p>暂无旅行文章</p>}
 ---
 
 <!doctype html>
